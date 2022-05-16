@@ -30,12 +30,12 @@ services:
       - P2P_PORT=${P2P_PORT}
         #- HTTP_HOST=0.0.0.0
         #- P2P_HOST=0.0.0.0
-
         # mongodb configuration
       - DB_NAME=${DB_NAME}
       - DB_URL=${DB_URL}
       - MONGODBDIR=/var/lib/mongodb
-
+      - BLOCKS_DIR=/blocks
+      
         # peering configuration
         #- OFFLINE=${OFFLINE}
         #- NO_DISCOVERY=${NO_DISCOVERY}
